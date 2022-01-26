@@ -35,7 +35,7 @@ namespace WpfLab6
             {
                 if (value == "north" | value == "south" | value == "east" | value == "west")
                 {
-                    windDir = value;
+                    windDir = value; 
                 }
                 else
                 {
