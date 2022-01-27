@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfLab6
 {
     /// <summary>
@@ -27,5 +28,7 @@ namespace WpfLab6
         {
             InitializeComponent();
         }
+
+       
     }
 }

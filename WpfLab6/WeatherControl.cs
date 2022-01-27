@@ -16,7 +16,7 @@ namespace WpfLab6
         public static readonly DependencyProperty TempProperty;
         private string windDir;
         private uint windSpeed;
-        private enum Precip
+        public enum Precip
         {
             Sunny,
             Cloudy,
@@ -55,18 +55,19 @@ namespace WpfLab6
                 windSpeed = value;
             }
         }
-
+        public Precip Precipitation { get; set; } 
         public int Temp
         {
             get => (int)GetValue(TempProperty);
             set => SetValue(TempProperty, value);
         }
 
-        public WeatherControl(int temp, string windDir, uint windSpeed)
+        public WeatherControl(int temp, string windDir, uint windSpeed, Precip precip)
         {
             this.Temp = temp;
             this.WindDir = windDir;
             this.WindSpeed = windSpeed;
+            this.Precipitation = precip;
         }
 
         static WeatherControl()
@@ -102,4 +103,5 @@ namespace WpfLab6
                 return 0;
         }
     }
+    
 }
