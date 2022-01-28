@@ -27,8 +27,10 @@ namespace WpfLab6
         public MainWindow()
         {
             InitializeComponent();
-        }
+            WeatherControl wheather = new WeatherControl(-20, "west", 6, Precip.Sunny);
+            textBox.Text =$"Температура: { wheather.Temp} градусов Цельсия \nНаправление ветра: { wheather.WindDir} \nСкорость ветра: { wheather.WindSpeed} м/с\nОсадки: { wheather.Precipitation}";
 
+        }
        
     }
 }

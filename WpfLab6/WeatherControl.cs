@@ -11,20 +11,18 @@ using System.Windows;
 //Свойство «температура» преобразовать в свойство зависимости.
 namespace WpfLab6
 {
+    public enum Precip
+    {
+        Sunny,
+        Cloudy,
+        Rain,
+        Snow
+    };
     class WeatherControl : DependencyObject
     {
         public static readonly DependencyProperty TempProperty;
         private string windDir;
         private uint windSpeed;
-        public enum Precip
-        {
-            Sunny,
-            Cloudy,
-            Rain,
-            Snow
-        };
-
-
         public string WindDir
         {
             get

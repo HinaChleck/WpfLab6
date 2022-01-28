@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Text=""/>
+        <TextBox x:Name="textBox" Text="" FontSize="38" Foreground="Crimson"/>
+        <!--<TextBlock>
+            <Run Text="Пользователей в команде"/>
+            <Run Text="{Binding SelectedTeams.TeamName, Mode=OneWay}"/>  //Пример конкатенации прямо в xaml
+            <Run Text=":"/>
+            <Run Text="{Binding UsersToTeams.Count, Mode=OneWay}"/>
+        </TextBlock>-->
+        
     </Grid>
 </Window>
